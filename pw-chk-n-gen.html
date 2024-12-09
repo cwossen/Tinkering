@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="pw-chk-n-gen.css">
+
+</head>
+
+
+<body>
+
+    <div class="container">
+    <h1>Create Your Password</h1>
+
+        <!-- Password Generator  -->
+         <section id="generator">
+
+            <h2>Password Generator</h2>
+            <label for="length">Password Length:</label>
+            <input type="number" id="length" min="8" max="20" value="12">
+
+            <fieldset id="options" class="hidden">
+                <legend>Select Character Types:</legend> 
+                <label><input type="checkbox" id="uppercase" checked>Uppercase</label>    
+                <label><input type="checkbox" id="lowercase" checked>Lowercase</label>    
+                <label><input type="checkbox" id="numbers" checked>Numbers</label>    
+                <label><input type="checkbox" id="symbols" checked>Symbols</label>    
+            </fieldset>
+
+            <button id="generate">Generate Password</button>
+            <input type="text" id="result" readonly>
+
+         </section>
+
+         <!-- Password Strength Checker Section -->     
+
+         <section id="strength-checker">
+            <h2>Password Strength Checker</h2>
+            <input type="password" id="password" placeholder="Enter your password">
+            <button id="check-btn">Check Strength</button>
+
+            <div class="output">
+                <p>Password Strength: <span id="strength"></span></p>
+                <div id="strength-bar"></div>
+                <p id="recommendations"></p>
+            </div>
+        </section>
+    </div>
+
+    <script src="pwgenerator.js"></script>
+    <script src="passwordStrength.js"></script>
+</body>
+</html>

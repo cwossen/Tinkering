@@ -1,0 +1,130 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; 
+    background: #f4f4f9; 
+    color: #333; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    padding: 20px;  
+}
+.container {
+    background: #fff;
+    padding: 20px; 
+    box-sizing: border-box;
+    border-radius: 12px; 
+    height:100vh;
+    width: 90vw;
+    max-width: 600px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+ 
+}
+
+h1 {
+    text-align: center; 
+    font-size: 2em; 
+    margin-bottom: 1em;
+    color: #444; 
+
+}
+
+section {
+    margin-bottom: 2em; 
+}
+
+h2 {
+
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    color: #555; 
+}
+
+
+/* Inputs and Buttons */
+
+label, input, button {
+   display: block; 
+   width: 100%; 
+   margin-bottom: 1em;
+
+}
+
+label {
+    font-size: 1em; 
+    font-weight: bold; 
+    color: #444; 
+
+}
+
+input[type="number"], input[type="password"], input[type="text"] {
+
+    padding: 0.8em; 
+    font-size: 1em; 
+    border: 1px solid #ccc; 
+    border-radius: 6px; 
+    outline: none; 
+    transition: all 0.3s ease; 
+}
+
+input[type="number"]:focus, input[type="password"]:focus, input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+button {
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    padding: 0.8em;
+    font-size: 1em;
+    border-radius: 6px;
+    cursor: pointer; 
+transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Specific Sections */
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 1em; 
+    border-radius: 8px; 
+    margin-bottom: 1em; 
+}
+
+.hidden {
+    display: none; 
+}
+
+legend {
+    font-size: 1em; 
+    font-weight: bold; 
+    color: #555; 
+}
+.output {
+    margin-top: 1em;
+}
+
+
+#strength-bar {
+    height: 10px;
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+#strength-bar span {
+    display: block; 
+    height: 100%; 
+    border-radius: 5px; 
+}
+
